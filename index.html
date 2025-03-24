@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" id="popup-styles" href="">
+    <script src="./index.js" defer></script>
+
+    <title>Test Task</title>
+</head>
+<body>
+    <div id="wrapper" class="wrapper">
+        <div class="container">
+            <div class="image-container">
+                <img src="./img/Group%204840.svg" alt="User 1">
+            </div>
+            <div class="text-container">
+                <h2>How to <span>Participate </span></h2>
+                <ol>
+                    <li>Subscribe to our News</li>
+                    <li><button id="signupButton" class="sign-up">SIGN UP</button></li>
+                    <li>Check your email inbox</li>
+                    <li>Wait till September 22</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <img src="./img/Union.svg"  id="closeButton" class="close" alt="">
+            <div class="popup-content-wrapper">
+                <h3 class="popup-header-title" id="popup-title">To register, enter the mail to which our news is sent and set your password</h3>
+                <form id="signupForm">
+                    <input type="email" class="input-styles" id="email" placeholder="Email" required>
+                    <input type="password" class="input-styles" id="password" placeholder="Password" required>
+                    <button id="submit-btn" type="submit">SUBMIT</button>
+                </form>
+                <div id="thankYouMessage" class="hidden">
+                    <h3>Thank You</h3>
+                    <p class="thanks-message">To complete registration, please check your e-mail</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
